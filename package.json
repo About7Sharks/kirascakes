@@ -1,0 +1,14 @@
+{
+  "name": "kirascakes",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "sass": "^1.26.11",
+    "vite": "^1.0.0-rc.1"
+  }
+}
