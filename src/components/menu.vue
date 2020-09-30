@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <img id='kira' src="https://www.cake2therescue.com.au/wp-content/uploads/2017/04/baker-girl-hand-show.png" alt="">
 
     <div class="menuItem">
+    <img id='kira' src="https://www.cake2therescue.com.au/wp-content/uploads/2017/04/baker-girl-hand-show.png" alt="">
+
       <img class="div5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake4.png" alt="">
       <span v-if="menuItem=='CupCakes'" class="div3">
         <h3>Gourmet Cupcake</h3>
@@ -164,21 +165,22 @@ Saturday 10:00-2:00pm</p>
 
     #kira {
       position: absolute;
-      left: 0px;
+      left: -33%;
+      z-index: 2;
       width: 350px;
-      top: 160px;
+      top: 80px;
     }
 
     .menuItem {
       position: absolute;
-      left: 250px;
+      left: 25%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 75px 250px 75px;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
       max-height: 400px;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
       margin-top: 25px;
       background-image: -webkit-linear-gradient(45deg, #ffffff 0%, #f3f3f3 100%);
@@ -263,6 +265,7 @@ Saturday 10:00-2:00pm</p>
       .div5 {
         grid-area: 3 / 1 / 4 / 2;
         width: 150px;
+        z-index: 3;
         transform: translate3d(0px, -125px, 0px);
       }
     }
@@ -304,7 +307,7 @@ Saturday 10:00-2:00pm</p>
 
 
   }
-       @media only screen and (max-width: 815px) {
+       @media only screen and (max-width: 800px) {
        #kira{
          display: none;
        }
